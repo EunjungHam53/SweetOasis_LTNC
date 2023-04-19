@@ -257,12 +257,6 @@ void GameOver()
     Mix_PlayChannel(-1, g_game_lose, 0);
     SDL_Delay(5000);
     close();
-
-    /*if (MessageBox(NULL, L"THUA RỒI", L":>", MB_OK | MB_ICONSTOP) == IDOK)
-    {
-        close();
-        SDL_Quit();
-    }*/
 }
 
 void YouWin()
@@ -273,12 +267,6 @@ void YouWin()
     Mix_PlayChannel(-1, g_wow_sound, 0);
     SDL_Delay(5000);
     close();
-
-    /*if (MessageBox(NULL, L"THẮNG RỒI", L":>", MB_OK | MB_ICONSTOP) == IDOK)
-    {
-        close();
-        SDL_Quit();
-    }*/
 }
 
 int main(int argc, char* argv[])
@@ -367,9 +355,9 @@ int main(int argc, char* argv[])
         text_menu[0].SetRect(SCREEN_WIDTH * 0.15, SCREEN_HEIGHT * 0.3);
         text_menu[0].RenderText(g_screen, text_menu[0].GetRectFrame().x, text_menu[0].GetRectFrame().y);
 
-        text_menu[1].SetText("Exit");
+        text_menu[1].SetText("Exit if you wannabe a loser...");
         text_menu[1].LoadFromRenderText(font_time, g_screen);
-        text_menu[1].SetRect(SCREEN_WIDTH * 0.15, SCREEN_HEIGHT * 0.3 + text_menu[0].GetHeight() + 5);
+        text_menu[1].SetRect(SCREEN_WIDTH * 0.6, SCREEN_HEIGHT * 0.9);
         text_menu[1].RenderText(g_screen, text_menu[1].GetRectFrame().x, text_menu[1].GetRectFrame().y);
 
         while (SDL_PollEvent(&g_event) != 0)
