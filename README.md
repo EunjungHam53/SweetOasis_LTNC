@@ -28,6 +28,13 @@
 ------------------------------------------------
 ------------------------------------------------
 
+####
+![alt](https://github.com/EunjungHam53/SweetOasis_LTNC/blob/main/img/thumbnail/thumbnail1.jpg)
+#### Concept photo 1: Sunny light land
+####
+![alt](https://github.com/EunjungHam53/SweetOasis_LTNC/blob/main/img/thumbnail/thumbnail2.jpg)
+#### Concept photo 2: The Dark cave
+####
 
 ## 1. Tổng quan về game:
 ### 1.1 Giới thiệu: <a name="introduction"></a>
