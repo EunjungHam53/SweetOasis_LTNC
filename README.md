@@ -6,8 +6,9 @@
 
 ##### 1. Tổng quan về game:
 ###### --- [1.1 Giới thiệu:](#introduction)
-###### ---[1.2 Kiến thưc áp dụng:](#knowledge)
-###### ---[1.3 GamePlay:](#play)
+###### --- [1.2 SDLTileMap_Editor:](#tool)
+###### ---[1.3 Kiến thưc áp dụng:](#knowledge)
+###### ---[1.4 GamePlay:](#play)
 ##### 2. Chi tiết về các đối tượng (class) được sử dụng trong game:
 ###### --- [General.h](#gene)
 ###### --- [ImgObjectBase.h](#img)
@@ -38,19 +39,23 @@
 
 ####
 
-## 1. Tổng quan về game:
+## 1 Tổng quan về game:
 ### 1.1 Giới thiệu: <a name="introduction"></a>
 #### [DEMO GAME TRÊN YOUTUBE]
 SWEET OASIS là game được phát triển bởi Lê Xuân Hùng, MSV 22028172 cho bài tập lớn môn LTNC INT2215 23.
 Game dựa trên game Mario tuổi thơ. Game có xử lí nổi bật về map tiles. 
 Game dùng chuột và các nút <-, ->.
 
-### 1.2 Kiến thức áp dụng: <a name="knowledge"></a>
+### 1.2 SDLTileMap_Editor: <a name="tool"></a>
+- Các bạn có thể vào [link sau](https://github.com/EunjungHam53/SDLTileMap_Editor) để xem chi tiết và cách hoạt động về việc tạo ra 1 file data lưu dữ liệu của map để load các tiles lên trong quá trình chơi game
+- Công cụ này mình tạo độc lập với game để hỗ trợ chỉnh sửa một cách hiệu quả file data
+
+### 1.3 Kiến thức áp dụng: <a name="knowledge"></a>
 ####
 - Ngôn ngữ lập trình C++.
 - Thư viện đồ họa SDL2 qua slide cô Châu và lazyfoo.
 - Kiến thức về OOP: lớp, đối tượng, tính đóng gói, tính thừa kế, lớp trừu tượng. (tham khảo qua giáo trình OOP_2013 của ĐHCN-ĐHQGHN)
-### 1.3 ***GamePlay***: <a name="play"></a>
+### 1.4 ***GamePlay***: <a name="play"></a>
 ####
 ##### Cửa số menu: có 2 options: nhấn *play game* để chơi; nhán *Exit* để thoát
 ##### Về *luật chơi* trong game:
