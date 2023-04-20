@@ -7,8 +7,8 @@
 ##### 1. Tổng quan về game:
 ###### --- [1.1 Giới thiệu:](#introduction)
 ###### --- [1.2 SDLTileMap_Editor:](#tool)
-###### ---[1.3 Kiến thưc áp dụng:](#knowledge)
-###### ---[1.4 GamePlay:](#play)
+###### --- [1.3 Kiến thưc áp dụng:](#knowledge)
+###### --- [1.4 GamePlay:](#play)
 ##### 2. Chi tiết về các đối tượng (class) được sử dụng trong game:
 ###### --- [General.h](#gene)
 ###### --- [ImgObjectBase.h](#img)
