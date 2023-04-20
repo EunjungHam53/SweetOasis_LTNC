@@ -42,19 +42,24 @@
 ## 1 Tổng quan về game:
 ### 1.1 Giới thiệu: <a name="introduction"></a>
 #### [DEMO GAME TRÊN YOUTUBE]
-SWEET OASIS là game được phát triển bởi Lê Xuân Hùng, MSV 22028172 cho bài tập lớn môn LTNC INT2215 23.
-Game dựa trên game Mario tuổi thơ. Game có xử lí nổi bật về map tiles. 
-Game dùng chuột và các nút <-, ->.
+
+#### SWEET OASIS là game được phát triển bởi Lê Xuân Hùng, MSV 22028172 cho bài tập lớn môn LTNC INT2215 23.
+#### Game dựa trên game Mario tuổi thơ. Game có xử lí nổi bật về map tiles. 
+#### Game dùng chuột và các nút <-, ->.
+------------------------------------------------
 
 ### 1.2 SDLTileMap_Editor: <a name="tool"></a>
 - Các bạn có thể vào [link sau](https://github.com/EunjungHam53/SDLTileMap_Editor) để xem chi tiết và cách hoạt động về việc tạo ra 1 file data lưu dữ liệu của map để load các tiles lên trong quá trình chơi game
 - Công cụ này mình tạo độc lập với game để hỗ trợ chỉnh sửa một cách hiệu quả file data
+------------------------------------------------
 
 ### 1.3 Kiến thức áp dụng: <a name="knowledge"></a>
 ####
 - Ngôn ngữ lập trình C++.
 - Thư viện đồ họa SDL2 qua slide cô Châu và lazyfoo.
 - Kiến thức về OOP: lớp, đối tượng, tính đóng gói, tính thừa kế, lớp trừu tượng. (tham khảo qua giáo trình OOP_2013 của ĐHCN-ĐHQGHN)
+------------------------------------------------
+
 ### 1.4 ***GamePlay***: <a name="play"></a>
 ####
 ##### Cửa số menu: có 2 options: nhấn *play game* để chơi; nhán *Exit* để thoát
@@ -85,6 +90,10 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 - Khi Boss bị thương do ăn GEM của Player, Boss sẽ chuyển sang trạng thái **HURT**. Khi chết, Boss chuyển sang trạng thái cuối là **DEADTH** kèm hiệu ứng âm thanh.
 ##### Ngoài ra còn có các cửa sổ: GAME_OVER, WINNER với các âm thanh vui nhộn.
 
+##
+------------------------------------------------
+------------------------------------------------
+
 ## 2. Chi tiết về các đối tượng (class) được sử dụng trong game:
 ### <a name="gene"></a>General.h:
 #### Chứa những biến toàn cục liên quan đến window, screen(renderer), event, include các thư viện SDL2.
@@ -94,10 +103,12 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 - Struct Input cho các đối tượng di chuyển để lưu trạng thái rồi xử lý ở các hàm HandleMove riêng từng đối tượng.
 - Struct Map: lưu dữ liệu cho gamemap.
 - Các hàm CheckCollision - hàm bool trả về trạng thái va chạm giữa 2 nhân vật; hàm CheckFocusWithRect - hàm bool trả về trạng thái chuột di vào chữ chưa để đổi màu(có trong menu game)
+------------------------------------------------
 
 ### <a name="img"></a>ImgObjectBase.h: 
 #### Chứa lớp đối tượng về hình ảnh đơn giản là lớp cha để các lớp player, enemies, boss, extra_item... kế thừa gồm các thuộc tính rect (lưu vị trí xuất hiện trên renderer) và p_texture_ (biến texture lưu dữ liệu ảnh)
 #### Chủ yếu hàm này để load các tile map và load background, các đối tượng ảnh đơn giản không có sprite
+------------------------------------------------
 
 ### <a name="player_"></a>Player.h:
 #### Chứa lớp đối tượng Player về nhân vật người chơi điều khiển được kế thừa thuộc tính cơ bản từ lớp ImgObjectBase
@@ -162,6 +173,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 
 - int return_time_;
 - int num_falling_;
+------------------------------------------------
 
 ### <a name="enemies_"></a>EnemiesObject.h:
 #### Lưu ý: xem trước giải thích các hàm ở lớp Player
@@ -177,6 +189,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 - int animation_b_;
 - int frog_jump_time_;
 - bool sound_frog_played_;
+------------------------------------------------
 
 ### <a name="boss_"></a>BossObject.h:
 #### Lưu ý: xem trước giải thích các hàm ở lớp Player
@@ -197,6 +210,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 - bool appear_;
 - int time_to_load_attack2;
 - bool is_mechanical_sound_played;
+------------------------------------------------
 
 ### <a name="bullet"></a>BulletObject.h
 #### Chứa lớp BulletObject về đạn bắn cho các loại nhân vật trong game
@@ -226,6 +240,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 - bool is_move_: điều kiện xét trước khi InitBullet
 - unsigned int bullet_dir_: hướng đạn
 - unsigned int bullet_type_: kiểu đạn
+------------------------------------------------
 
 ### <a name="explosion"></a>Explosion.h:
 #### Chứa lớp ExplosionObject về vụ nổ. 
@@ -233,14 +248,17 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 - hiệu ứng khi ăn những items của Player
 - hiệu ứng khi đạn va chạm vào các enemies
 #### Chủ yếu là load sprite animation sau khi CheckCollison(obj1, obj2) == true
+------------------------------------------------
 
 ### <a name="item1"></a>items_object.h:
 #### Chứa lớp ItemsObject quản lý các vật hỗ trợ trong game (CHERRY, GEM) 
 #### Lớp có các hàm về setting vị trí; load sprite animation như các lớp đối tượng trước
+------------------------------------------------
 
 ### <a name="item2"></a>ExtraItemIcon.h:
 #### Chứa lớp PlayerHP quản lí về Icon HP và lớp PlayerGem quản lí về Icon Gem trên thanh Hotbar
 #### Đối tượng này chứa hàm xử lí về load ảnh và setting vị trí hiện trên thanh Hotbar (vd: nhân vật tăng thêm mạng thì thanh Hotbar sẽ hiện thêm 1 hình trái tim...)
+------------------------------------------------
 
 ### <a name="text"></a>TextObject.h:
 #### Chứa lớp TextObject quản lí về các text trong game
@@ -259,15 +277,18 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ##### Các hàm nhập & lấy dữ liệu kiểu string:
 - void SetText(const std::string& text) {str_val_ = text;}
 - std::string GetText() const {return str_val_;}
+------------------------------------------------
 
 ### <a name="timer"></a>Timer.h:
 #### Chứa lớp Timer quản lí về mặt thời gian cho game:
 - Xử lí FPS
 - Thời gian thực trên thanh Hotbar
+------------------------------------------------
 
 ### <a name="rect"></a>RectangleDraw.h:
 #### Chứa lớp RectangleForm cho việc vẽ thanh Hotbar bao gồm:
 - Vẽ nền trong
 - Vẽ 1 cái viền nhỏ bao quanh
+------------------------------------------------
 
 ### <a name="main"></a>main.cpp:
