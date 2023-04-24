@@ -41,7 +41,7 @@
 
 ## 1 Tổng quan về game:
 ### 1.1 Giới thiệu: <a name="introduction"></a>
-#### [DEMO GAME TRÊN YOUTUBE]
+#### [DEMO GAME TRÊN YOUTUBE](https://www.youtube.com/watch?v=onymbbxXpPg)
 
 #### SWEET OASIS là game được phát triển bởi Lê Xuân Hùng, MSV 22028172 cho bài tập lớn môn LTNC INT2215 23.
 #### Game dựa trên game Mario tuổi thơ. Game có xử lí nổi bật về map tiles. 
