@@ -111,6 +111,8 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="player_"></a>Player.h:
+![player](https://user-images.githubusercontent.com/122993827/235308484-65a91634-4243-45ac-851e-a3361f10b80b.gif)
+
 #### Chứa lớp đối tượng Player về nhân vật người chơi điều khiển được kế thừa thuộc tính cơ bản từ lớp ImgObjectBase
 #### Lưu ý: các nhóm hàm về xử lí hình ảnh, di chuyển, đạn của lớp Player cũng giống về mặt *xử lí* của lớp Enemies, Boss nhưng khác nhau về *kiểu* (vd: Player sẽ đi được trên ô tím nhưng các đối tượng khác sẽ không đi được do hàm CheckColliWithMap nhận kiểu khác nhau)
 ####
