@@ -111,7 +111,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="player_"></a>Player.h:
-![player](https://user-images.githubusercontent.com/122993827/235308484-65a91634-4243-45ac-851e-a3361f10b80b.gif)
+![player](https://user-images.githubusercontent.com/122993827/235308666-4c3eeaab-b827-4bc6-90e8-c47e57adf0b1.gif)
 
 #### Chứa lớp đối tượng Player về nhân vật người chơi điều khiển được kế thừa thuộc tính cơ bản từ lớp ImgObjectBase
 #### Lưu ý: các nhóm hàm về xử lí hình ảnh, di chuyển, đạn của lớp Player cũng giống về mặt *xử lí* của lớp Enemies, Boss nhưng khác nhau về *kiểu* (vd: Player sẽ đi được trên ô tím nhưng các đối tượng khác sẽ không đi được do hàm CheckColliWithMap nhận kiểu khác nhau)
@@ -178,6 +178,10 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="enemies_"></a>EnemiesObject.h:
+![eagle](https://user-images.githubusercontent.com/122993827/235308599-d576b898-71ee-453f-a0de-c0c3653a57a5.gif)
+![frog](https://user-images.githubusercontent.com/122993827/235308608-a26893fe-aea9-4798-908a-643baff1d609.gif)
+![oposum](https://user-images.githubusercontent.com/122993827/235308617-cd8b5cdb-a619-456e-a224-ac6f8583660c.gif)
+
 #### Lưu ý: xem trước giải thích các hàm ở lớp Player
 #### Về lớp EnemiesObject có 3 loại Enemy: FROG, OPOSUM, EAGLE.
 #### Các phương thức và thuộc tính khác biệt của lớp
@@ -194,6 +198,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="boss_"></a>BossObject.h:
+
 #### Lưu ý: xem trước giải thích các hàm ở lớp Player
 #### Lớp BossObject có 6 trạng thái chính: IDLE, WALK, ATTACK1, ATTACK2, HURT, DEADTH.
 #### Các phương thức và thuộc tính khác biệt của lớp
@@ -245,6 +250,9 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="explosion"></a>Explosion.h:
+![enemy-deadth](https://user-images.githubusercontent.com/122993827/235308995-a462ae86-8bc0-4acb-a962-fa4fd4e17263.gif)
+![item-feedback](https://user-images.githubusercontent.com/122993827/235309003-5ff623b9-a38b-449c-9e5a-a27c11fb1588.gif)
+
 #### Chứa lớp ExplosionObject về vụ nổ. 
 #### Trong game có 2 kiểu nổ:
 - hiệu ứng khi ăn những items của Player
@@ -253,6 +261,9 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="item1"></a>items_object.h:
+![cherry](https://user-images.githubusercontent.com/122993827/235309017-3936719f-0069-49df-9500-3bf5974ea96c.gif)
+![gem](https://user-images.githubusercontent.com/122993827/235309026-4a6008c8-e96e-4d4f-b54a-9fe5cb8a3193.gif)
+
 #### Chứa lớp ItemsObject quản lý các vật hỗ trợ trong game (CHERRY, GEM) 
 #### Lớp có các hàm về setting vị trí; load sprite animation như các lớp đối tượng trước
 ------------------------------------------------
