@@ -112,6 +112,9 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 
 ### <a name="player_"></a>Player.h:
 ![player](https://user-images.githubusercontent.com/122993827/235308666-4c3eeaab-b827-4bc6-90e8-c47e57adf0b1.gif)
+![run](https://user-images.githubusercontent.com/122993827/235309276-a8ecd578-cb4c-400b-b828-97a2c2981de1.gif)
+![jump](https://user-images.githubusercontent.com/122993827/235309286-7110cc18-e98e-40b2-949e-23b6f4180e5e.gif)
+
 
 #### Chứa lớp đối tượng Player về nhân vật người chơi điều khiển được kế thừa thuộc tính cơ bản từ lớp ImgObjectBase
 #### Lưu ý: các nhóm hàm về xử lí hình ảnh, di chuyển, đạn của lớp Player cũng giống về mặt *xử lí* của lớp Enemies, Boss nhưng khác nhau về *kiểu* (vd: Player sẽ đi được trên ô tím nhưng các đối tượng khác sẽ không đi được do hàm CheckColliWithMap nhận kiểu khác nhau)
@@ -198,6 +201,7 @@ Do người chơi điều khiển có thể nhảy di chuyển trái phải, b�
 ------------------------------------------------
 
 ### <a name="boss_"></a>BossObject.h:
+![boss](https://user-images.githubusercontent.com/122993827/235309610-7fd4ac54-45ff-4c98-905d-b71a3d3669d3.gif)
 
 #### Lưu ý: xem trước giải thích các hàm ở lớp Player
 #### Lớp BossObject có 6 trạng thái chính: IDLE, WALK, ATTACK1, ATTACK2, HURT, DEADTH.
